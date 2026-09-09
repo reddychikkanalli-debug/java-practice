@@ -1,0 +1,26 @@
+package DSA;
+
+import java.util.Scanner;
+
+public class primefactors {
+	
+	static void primeFactors(int n) {
+		int i=2;
+		while(i>1) {
+			while(n%i==0) {
+				System.out.println(i);
+				n=n/i;
+			}
+			i++;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new  Scanner(System.in);
+		int n=sc.nextInt();
+		primeFactors(n);
+
+	}
+
+}
