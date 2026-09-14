@@ -1,0 +1,168 @@
+package day03;
+import java.util.*;
+public class practies {
+	public static void main(String[] args) {
+	
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("enter name");
+		String s=sc.nextLine();
+
+		booleanspecialchar(s);
+	    
+		
+	}
+	public static void method(String s) {
+		String s1="ravi";
+		String s2="raman";
+		if(s1==s2) {
+			System.out.println("eqaual");
+		}else {
+			System.out.println("not equal");
+			
+		}
+		
+	}
+	
+	public static void basic(String s) {
+		int n=s.length();
+		for(int i=0;i<n;i++) {
+			char c=s.charAt(i);
+			System.out.println(c);
+			
+		}
+	}
+	public static void count(String s) {
+		char[] arr = s.toCharArray();  // use the parameter 's'
+	    int len = arr.length;
+	   System.out.println(len);
+		
+		
+	}
+	public static void vowel(String s) {
+	int count=0;
+	String as="";
+	for(int i=0;i<s.length();i++) {
+		char c=s.charAt(i);
+		if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u') {
+			count++;
+			as = as+s.charAt(i);
+	
+			
+		}
+		System.out.println();
+	}	System.out.println(as);
+}
+	public static void reversestring(String s) {
+		String reverse ="";
+		int n=s.length();
+		for(int i=0;i<n;i++) {
+			char ch =s.charAt(i);
+			reverse =   ch +reverse ;
+			
+		}
+		System.out.println(reverse);
+		
+			
+			
+	}
+	public static void pa(String s) {
+		int i=0;
+		int j=s.length()-1;
+		while(i<j) {
+			if(s.charAt(i)==s.charAt(j)){
+				i++;
+				j--;
+			}
+			else {
+				System.out.println(" not palindrom");
+				
+			
+				
+				
+			}
+		}
+		System.out.println("palindrom");
+		
+	}
+	public static void countspace(String s) {
+		int count=0;
+		for(int i=0;i<s.length();i++) {
+			if(s.charAt(i) == ' ') {
+				count++;
+			}
+			
+		}
+		System.out.println(count);
+		
+	}
+	public static void reverse(String s) {
+		char[] chArr = s.toCharArray();   // convert string to char array
+	    for (int i = s.length() - 1; i >= 0; i--) {  // loop backwards
+	        System.out.print(chArr[i]); 
+//		char[] chArr =s.tocharArray();
+//		 {
+//			Sytem.out.println();
+			
+		}
+		
+		
+	}
+	
+//	public static void uppercase(String s) {
+//	    String t = "";
+//	    for (int i = 0; i < s.length(); i++) 
+//	    {
+//	    	char ch = s.charAt(i);
+//	        if (ch >= 'a' && ch <= 'z') 
+//	    {
+//	         t = t + (char)(ch - 32);  // subtract 32 for lowercase → uppercase
+//	        } 
+//	        else {
+//	            t += ch;  // keep other characters unchanged
+//	        }
+//	        System.out.println(t);
+//	    }
+	public static void uppercase(String s) {
+	    String t = "";
+	    for (int i = 0; i < s.length(); i++) {
+	        char ch = s.charAt(i);
+	        if (ch >= 'a' && ch <= 'z') {
+	            t = t + (char)(ch - 32);  // subtract 32 for lowercase → uppercase
+	        } else {
+	            t += ch;  // keep other characters unchanged
+	        }
+	    }
+	    System.out.println(t);
+	}
+	public static void lowercase(String s) {
+	    String t = "";
+	    for (int i = 0; i < s.length(); i++) {
+	        char ch = s.charAt(i);
+	        if (ch >= 'A' && ch <= 'Z') {
+	            t = t + (char)(ch + 32);  // subtract 32 for lowercase → uppercase
+	        } else {
+	            t += ch;  // keep other characters unchanged
+	        }
+	    }
+	    System.out.println(t);
+}
+	public static void booleanspecialchar(String s) {
+	    String t = "";
+	    for (int i = 0; i < s.length(); i++) {
+	        char ch = s.charAt(i);
+	        if ((ch >= 'a' && ch <= 'z') || 
+	            (ch >= 'A' && ch <= 'Z') || 
+	            (ch >= '0' && ch <= '9')) {
+	            t = t + ch;
+	        }
+	    }
+	    System.out.println(t);
+	}
+	public static void sum(String s) {
+		
+	}
+}
+
+
+	
