@@ -1,0 +1,52 @@
+package encapsulation;
+
+public class Rec {
+	public static int sumOfArray(int arr[],int i){
+		if(i==arr.length) {
+			return 0;
+		}
+		return sumOfArray(arr,i+1)+arr[i];
+	
+	
+	
+}
+//	public static int sumOfDigits(int n){
+//		if(n==0) {
+//			return 0;
+//		}
+//		return n%10 + sumOfDigits(n/10);
+//		
+//	
+//}
+
+	
+//	public static void fun(int n) {
+//		if(n<1) {
+//			return;
+//		}
+//		System.out.println(n);
+//		fun(n-1);
+//	}
+//}
+//	public static int fun(int n) {
+//		if(n==1 || n==0) {
+//			return 1;
+//		}else {
+//			
+//		}
+//			
+//		
+//		
+//	
+//}
+//		
+	
+	
+
+	public static void main(String[] args) {
+		int[] arr= {1,2,3,4};
+
+   System.out.println(sumOfArray(arr,0));
+	}
+
+}
