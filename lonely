@@ -1,0 +1,43 @@
+package DSA;
+
+import java.util.Scanner;
+
+//class result{
+//	   public static int lonelyinteger(int[] ar) {
+//		   
+//		   for(int i=0;i<ar.length-2;i=i+2){
+//			   if(ar[i]!=ar[i+1]) {
+//				   return ar[i];
+//			   }
+//		   }
+//		   return ar[ar.length-1];
+//	   }
+//   }
+
+public class lonely {
+	public static int lonelyinteger(int[] ar) {
+		   
+		   for(int i=0;i<ar.length-2;i=i+2){
+			   if(ar[i]!=ar[i+1]) {
+				   return ar[i];
+			   }
+		   }
+		   return ar[ar.length-1];
+	   }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc =new Scanner(System.in);
+		int n=sc.nextInt();
+		int[] ar=new int[n];
+		System.out.println("Enter array size");
+		for(int i=0;i<ar.length;i++) {
+			ar[i]=sc.nextInt();
+		}
+		int result =lonelyinteger(ar);
+		System.out.println("lonely element:"+result);
+		sc.close();
+
+	}
+
+}
