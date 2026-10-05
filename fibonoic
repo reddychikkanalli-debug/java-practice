@@ -1,0 +1,19 @@
+package Recursion;
+
+public class fibonic {
+      static int fibonic(int n) {
+    	  if(n==1 || n==2) {
+    		  return 1;
+    	  }
+    	    
+    	     return fibonic(n-1)+fibonic(n-2);
+      }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=7;
+		System.out.println(fibonic(n));
+
+	}
+
+	
+}
